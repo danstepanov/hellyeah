@@ -2,15 +2,14 @@ var green = 0;
 var red = 1;
 var current = green;
 
-/*(document).ready(function(){
+$(document).ready(function(){
    var audio = "<audio id = 'myAudio'> 
  <source src ="hellyeah.mp3" type ="audio/mpeg"> </audio";
-   ('body').append(audio);
-   ("a:contains('Hellllllll yeah')").click(function(){
-   ("#myAudio").play();
+   $('body').append(audio);
+   $("a:contains('Hellllllll yeah')").click(function(){
+   $("#myAudio").play();
 });
-}); */
-
+});
 
 function updateIcon() {
 if (current == red) {

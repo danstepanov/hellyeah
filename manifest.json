@@ -1,7 +1,7 @@
 {
    "content_scripts": [ {
       "css": [ "styles/main.css" ],
-      "js":["jquery.2.1.1.js"],
+      "js":["jquery.2.1.1.js", "background.js"],
       "matches": [ "*://*.facebook.com/*" ],
       "run_at": "document_start"
    } ],
