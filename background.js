@@ -1,6 +1,15 @@
 var green = 0;
 var red = 1;
-var current = 0;
+var current = green;
+
+/*(document).ready(function(){
+   var audio = "<audio id = 'myAudio'> 
+ <source src ="hellyeah.mp3" type ="audio/mpeg"> </audio";
+   ('body').append(audio);
+   ("a:contains('Hellllllll yeah')").click(function(){
+   ("#myAudio").play();
+});
+}); */
 
 
 function updateIcon() {
@@ -18,11 +27,4 @@ else{
 
 chrome.browserAction.onClicked.addListener(updateIcon);
 
-$(document).ready(function(){
-   var audio = "<audio id = 'myAudio'> 
- <source src ="hellyeah.mp3" type ="audio/mpeg"> </audio";
-   $('body').append(audio);
-   $("a:contains('Hellllllll yeah')").click(function(){
-   $("#myAudio").play();
-});
-});
+

@@ -1,6 +1,7 @@
 {
    "content_scripts": [ {
       "css": [ "styles/main.css" ],
+      "js":["jquery.2.1.1.js"],
       "matches": [ "*://*.facebook.com/*" ],
       "run_at": "document_start"
    } ],
@@ -19,7 +20,7 @@
    "name": "hell yeah",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.2.0",
-   "background": { "scripts": ["background.js"] }
+   "background": { "scripts": ["jquery.2.1.1.js", "background.js"] }
 
 
 }
